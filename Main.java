@@ -25,7 +25,12 @@ public class Main {
     // make sure all data entered the ArrayList
     System.out.println(totalScore);
     System.out.println(totalScore.size());
-    
+    int total = 0;
+    for(int score : totalScore){
+      total += score;
+    }
+    double average = (double)total/totalScore.size();
+    System.out.println(average);
   }
 
 }
