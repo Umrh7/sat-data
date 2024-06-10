@@ -28,13 +28,19 @@ public class Main {
     int total = 0;
     int numThatHaveAboveThousand = 0; 
     int highest = 0;
+    int numberOfPeopleWhoTookSat = 0;
+    int lowest = 0;
     for(int score : totalScore){
+      numberOfPeopleWhoTookSat++;
       total += score;
       if(score > 1000){
         numThatHaveAboveThousand++;
       }
       if(score > highest){
         highest = score;
+      }
+      if(lowest > score){
+        lowest = score;
       }
     }
     double average = (double)total/totalScore.size();
@@ -43,6 +49,9 @@ public class Main {
     System.out.println(numThatHaveAboveThousand);
     System.out.println(highest);
     System.out.println(averageOfAboveThousand * 100);
+    System.out.println(numberOfPeopleWhoTookSat);
+    System.out.println(lowest);
+
 
   }
 }
