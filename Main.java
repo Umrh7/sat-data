@@ -38,8 +38,11 @@ public class Main {
       }
     }
     double average = (double)total/totalScore.size();
+    double averageOfAboveThousand = (double) numThatHaveAboveThousand/totalScore.size();
     System.out.println(average);
     System.out.println(numThatHaveAboveThousand);
     System.out.println(highest);
+    System.out.println(averageOfAboveThousand * 100);
+
   }
 }
