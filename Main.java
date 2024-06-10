@@ -27,18 +27,19 @@ public class Main {
     System.out.println(totalScore.size());
     int total = 0;
     int numThatHaveAboveThousand = 0; 
+    int highest = 0;
     for(int score : totalScore){
       total += score;
       if(score > 1000){
         numThatHaveAboveThousand++;
       }
+      if(score > highest){
+        highest = score;
+      }
     }
     double average = (double)total/totalScore.size();
     System.out.println(average);
     System.out.println(numThatHaveAboveThousand);
-
-   
-    
+    System.out.println(highest);
   }
-
 }
